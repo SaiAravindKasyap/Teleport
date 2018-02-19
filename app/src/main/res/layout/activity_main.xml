@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.applemacbookpro.teleport.MainActivity"
+    android:background="#fff">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="200dp"
+        android:text="Bus Routes"
+        android:textSize="26dp"
+        android:elevation="39dp"
+        android:textColor="#ffffff"
+        android:onClick="onclickbr"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_br"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="300dp"
+        android:text="Ticket Booking"
+        android:onClick="onclicktb"
+        android:textSize="26dp"
+        android:id="@+id/btn_tb"
+        android:elevation="39dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textColor="#0044ff"
+        android:textSize="26dp"
+        android:layout_below="@+id/btn_bp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:clickable="true"
+        android:onClick="onclickhelp"
+        android:elevation="40dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="390dp"
+        android:text="Bus Pass "
+        android:onClick="onclickbp"
+        android:textSize="26dp"
+        android:id="@+id/btn_bp"
+        android:elevation="39dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="29dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/history"
+        android:id="@+id/imageButton"
+        android:onClick="onclickmenu"
+        android:layout_alignTop="@+id/imageView"
+       />
+
+
+</RelativeLayout>
+
